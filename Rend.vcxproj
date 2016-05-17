@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D6649A71-9052-4B7F-9611-74D970338570}</ProjectGuid>
+    <RootNamespace>Rend</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>WinMM.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0c0a</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CApplication.h" />
+    <ClInclude Include="CRange.h" />
+    <ClInclude Include="CWorkbook.h" />
+    <ClInclude Include="CWorkbooks.h" />
+    <ClInclude Include="CWorksheet.h" />
+    <ClInclude Include="CWorksheets.h" />
+    <ClInclude Include="NewStart.h" />
+    <ClInclude Include="Rend.h" />
+    <ClInclude Include="RendDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NewStart.cpp" />
+    <ClCompile Include="Rend.cpp" />
+    <ClCompile Include="RendDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Rend.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Rend.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Rend\Rend\res\Again.ico" />
+    <Image Include="..\..\Rend\Rend\res\Box_Red.ico" />
+    <Image Include="..\..\Rend\Rend\res\cancel.ico" />
+    <Image Include="..\..\Rend\Rend\res\Check.ico" />
+    <Image Include="..\..\Rend\Rend\res\Delete.ico" />
+    <Image Include="..\..\Rend\Rend\res\down.ico" />
+    <Image Include="..\..\Rend\Rend\res\edit.ico" />
+    <Image Include="..\..\Rend\Rend\res\Folder.ico" />
+    <Image Include="..\..\Rend\Rend\res\Play.ico" />
+    <Image Include="..\..\Rend\Rend\res\up.ico" />
+    <Image Include="res\Again.ico" />
+    <Image Include="res\bat.ico" />
+    <Image Include="res\Box_Red.ico" />
+    <Image Include="res\cancel.ico" />
+    <Image Include="res\Check.ico" />
+    <Image Include="res\Delete.ico" />
+    <Image Include="res\down.ico" />
+    <Image Include="res\edit.ico" />
+    <Image Include="res\excel.ico" />
+    <Image Include="res\file_delete.ico" />
+    <Image Include="res\floppy_disk.ico" />
+    <Image Include="res\Folder.ico" />
+    <Image Include="res\gnome_view_sort_ascending.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\java old school.ico" />
+    <Image Include="res\ms_dos_batch_file.ico" />
+    <Image Include="res\music _new.ico" />
+    <Image Include="res\Play.ico" />
+    <Image Include="res\Rend.ico" />
+    <Image Include="res\sort_neutral_green.ico" />
+    <Image Include="res\text_enriched.ico" />
+    <Image Include="res\up.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Rend.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
